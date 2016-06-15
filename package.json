@@ -1,7 +1,7 @@
 {
-  "name": "openwebnet-site",
+  "name": "lizalex-site",
   "version": "1.0.0",
-  "description": "openwebnet-site",
+  "description": "lizalex-site",
   "scripts": {
     "clean": "rimraf dist",
     "copy": "copyfiles -f CNAME favicon.ico ./dist",
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openwebnet/openwebnet-site.git"
+    "url": "TODO"
   },
   "license": "CC-BY-SA-4.0",
-  "homepage": "http://openwebnet.xyz",
+  "homepage": "TODO",
   "devDependencies": {
     "autoprefixer": "^6.3.1",
     "babel-core": "^6.3.15",
