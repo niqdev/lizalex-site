@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Provider} from 'react-redux';
-import App from './App';
+import {Router, browserHistory} from 'react-router';
+import routes from '../routes/index';
 import DevTools from './DevTools';
 
 export default class Root extends Component {
@@ -8,7 +9,7 @@ export default class Root extends Component {
     return (
       <Provider store={this.props.store}>
         <div>
-          <App />
+          <Router history={browserHistory} routes={routes}/>
           <DevTools />
         </div>
       </Provider>

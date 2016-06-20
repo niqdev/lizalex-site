@@ -1,3 +1,4 @@
+/*
 import React, {Component, PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
@@ -39,3 +40,24 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(App);
+*/
+
+import React, {Component} from 'react';
+import {Link, IndexLink} from 'react-router';
+
+export default class App extends Component {
+  render() {
+    const ACTIVE = {color: 'red'};
+    return (
+      <div>
+        <h1>APP</h1>
+        <ul>
+          <li><Link to="/" activeStyle={ACTIVE}>/</Link></li>
+          <li><IndexLink to="/" activeStyle={ACTIVE}>IndexLink</IndexLink></li>
+          <li><Link to="/gallery" activeStyle={ACTIVE}>Gallery</Link></li>
+        </ul>
+        {this.props.children}
+      </div>
+    );
+  }
+}
