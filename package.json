@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "TODO"
+    "url": "git@github.com:niqdev/lizalex-site.git"
   },
   "license": "CC-BY-SA-4.0",
-  "homepage": "TODO",
+  "homepage": "https://niqdev.github.io/lizalex-site",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.9.1",
