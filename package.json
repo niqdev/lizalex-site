@@ -4,7 +4,7 @@
   "description": "lizalex-site",
   "scripts": {
     "clean": "rimraf dist",
-    "copy": "copyfiles -f CNAME favicon.ico ./dist",
+    "copy": "copyfiles -f favicon.ico ./dist",
     "lint": "eslint src",
     "build": "npm run clean && npm run copy && webpack --config",
     "dist": "cross-env NODE_ENV=production npm run build -- webpack.config.prod.js",
