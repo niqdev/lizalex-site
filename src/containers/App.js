@@ -3,9 +3,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 import * as CounterActions from '../actions/CounterActions';
-import Counter from '../components/Counter';
-import Footer from '../components/Footer';
-import MyNav from '../components/MyNav';
+import {Counter, Footer, MyNav} from '../components';
 
 export default class App extends Component {
   render() {
