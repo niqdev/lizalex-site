@@ -10,13 +10,13 @@ import Root from './containers/Root';
 import {addLocaleData} from 'react-intl';
 import en from 'react-intl/locale-data/en';
 import it from 'react-intl/locale-data/it';
-import messages from './i18n/messages.json';
+import messagesIt from './i18n/messages-it.json';
 
 addLocaleData(en);
 addLocaleData(it);
 
 const initialState = {
-  intl: messages
+  //intl: messagesIt.messages
 };
 
 const store = configureStore(initialState);

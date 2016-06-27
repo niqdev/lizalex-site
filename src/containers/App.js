@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 
 import * as CounterActions from '../actions/CounterActions';
 import {Counter, Footer, MyNav} from '../components';
+import SelectLanguageContainer from './SelectLanguageContainer'
 
 export default class App extends Component {
   render() {
@@ -11,6 +12,7 @@ export default class App extends Component {
     return (
       <div className="main-app-container">
         <MyNav />
+        <SelectLanguageContainer />
         <div className="main-app-nav">Simple Redux Boilerplate</div>
         <Counter counter={counter} actions={actions}/>
         {this.props.children}
