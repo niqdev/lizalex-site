@@ -10,20 +10,13 @@ import Root from './containers/Root';
 import {addLocaleData} from 'react-intl';
 import en from 'react-intl/locale-data/en';
 import it from 'react-intl/locale-data/it';
+import messages from './i18n/messages.json';
 
 addLocaleData(en);
 addLocaleData(it);
 
-// TODO load json
-// "json-loader": "^0.5.4"
 const initialState = {
-  intl: {
-    defaultLocale: 'en',
-    locale: 'it',
-    messages: {
-      'home.myId': 'myDescriptionIta'
-    }
-  }
+  intl: messages
 };
 
 const store = configureStore(initialState);

@@ -35,7 +35,7 @@ module.exports = {
       }
     }),
     /**
-     * TODO common
+     *
      */
     new HtmlWebpackPlugin({
       title: 'lizalex',
@@ -54,6 +54,11 @@ module.exports = {
       {
         test: /\.scss$/,
         loader: 'style!css!sass'
+      },
+      {
+        test: /\.json$/,
+        exclude: /node_modules/,
+        loader: 'json'
       }
     ]
   }
