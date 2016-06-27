@@ -2,6 +2,16 @@
   "name": "lizalex-site",
   "version": "1.0.0",
   "description": "lizalex-site",
+  "homepage": "https://niqdev.github.io/lizalex-site",
+  "license": "CC-BY-SA-4.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:niqdev/lizalex-site.git"
+  },
+  "engines": {
+    "node": "6.2.x",
+    "npm": "3.9.x"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "copy": "copyfiles -f favicon.ico ./dist",
@@ -11,17 +21,12 @@
     "start": "npm run build -- webpack.config.dev.js && node devServer.js",
     "publish": "git subtree push --prefix dist origin gh-pages"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:niqdev/lizalex-site.git"
-  },
-  "license": "CC-BY-SA-4.0",
-  "homepage": "https://niqdev.github.io/lizalex-site",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.9.1",
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.4",
+    "babel-plugin-react-intl": "^2.1.3",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-react-hmre": "^1.1.1",
@@ -54,6 +59,8 @@
     "history": "^3.0.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
+    "react-intl": "^2.1.3",
+    "react-intl-redux": "0.0.10",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.1",
     "redux-thunk": "^2.1.0"

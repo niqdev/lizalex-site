@@ -2,6 +2,8 @@ import React, {Component, PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Link, IndexLink} from 'react-router';
+import {FormattedMessage} from 'react-intl';
+
 import * as CounterActions from '../actions/CounterActions';
 import Counter from '../components/Counter';
 import Footer from '../components/Footer';
@@ -19,6 +21,7 @@ export default class App extends Component {
         </ul>
         <div className="main-app-nav">Simple Redux Boilerplate</div>
         <Counter counter={counter} actions={actions}/>
+        <FormattedMessage id="home.myId" defaultMessage="myDefaultMessage"/>
         {this.props.children}
         <Footer />
       </div>
