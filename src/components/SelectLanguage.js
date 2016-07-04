@@ -1,25 +1,22 @@
 import React, {Component, PropTypes} from 'react'
+import {FormattedMessage} from 'react-intl';
 
 export default class SelectLanguage extends Component {
   render() {
     const {value, onChange, options} = this.props;
-    /*
-     {options.map(option =>
-     <option value={option.value} key={option.key}>
-     {option}
-     </option>)
-     }
-     */
-
     return (
       <div>
         <h1>{value}</h1>
         <select
           onChange={e => onChange(e.target.value)}
           value={value}>
-          <option value="it">IT</option>
-          <option value="en">EN</option>
+          {options.map(option =>
+            <option value={option.key} key={option.key}>
+              {option.value}
+            </option>
+          )}
         </select>
+        <FormattedMessage id="home.myId" defaultMessage="myDefaultMessage"/>
       </div>
     );
   }

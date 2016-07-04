@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Link, IndexLink} from 'react-router';
-import {FormattedMessage} from 'react-intl';
 
 export default class MyNav extends Component {
   render() {
@@ -12,7 +11,6 @@ export default class MyNav extends Component {
           <li><IndexLink to="/" activeStyle={ACTIVE}>IndexLink</IndexLink></li>
           <li><Link to="/gallery" activeStyle={ACTIVE}>Gallery</Link></li>
         </ul>
-        <FormattedMessage id="home.myId" defaultMessage="myDefaultMessage"/>
       </div>
     );
   }
