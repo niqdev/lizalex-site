@@ -5,6 +5,7 @@ import _ from 'lodash'
 
 import {SelectLanguage as SelectLanguageComponent} from '../components';
 
+// TODO move i18 NOT common within the component itself and merge all files
 import messagesIt from '../i18n/messages-it.json';
 import messagesEn from '../i18n/messages-en.json';
 const languages = [
