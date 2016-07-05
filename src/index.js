@@ -17,7 +17,10 @@ addLocaleData(en);
 addLocaleData(it);
 
 const initialState = {
-  intl: messagesIt.messages
+  intl: {
+    locale: messagesIt.locale,
+    messages: messagesIt.messages
+  }
 };
 
 const store = configureStore(initialState);
