@@ -35,11 +35,11 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify('development')
     }),
     /**
-     *
+     * ExtractTextPlugin allows to extract all styles into a separate css output file.
      */
     new ExtractTextPlugin('assets/style.css'),
     /**
-     *
+     * HtmlWebpackPlugin simplifies creation of HTML file with custom templates.
      */
     new HtmlWebpackPlugin({
       title: 'lizalex',
@@ -71,9 +71,6 @@ module.exports = {
       }
     ]
   },
-  /**
-   *
-   */
   resolve: {
     alias: {
       'bootstrap-css': path.join(__dirname, 'node_modules/bootstrap/dist/css/bootstrap.css')

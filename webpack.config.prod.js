@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   devtool: 'source-map',
@@ -35,7 +36,11 @@ module.exports = {
       }
     }),
     /**
-     *
+     * See description in 'webpack.config.dev' for more info.
+     */
+    new ExtractTextPlugin('assets/style-[hash].css'),
+    /**
+     * See description in 'webpack.config.dev' for more info.
      */
     new HtmlWebpackPlugin({
       title: 'lizalex',
@@ -56,10 +61,19 @@ module.exports = {
         loader: 'style!css!sass'
       },
       {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+      },
+      {
         test: /\.json$/,
         exclude: /node_modules/,
         loader: 'json'
       }
     ]
+  },
+  resolve: {
+    alias: {
+      'bootstrap-css': path.join(__dirname, 'node_modules/bootstrap/dist/css/bootstrap.css')
+    }
   }
 };
