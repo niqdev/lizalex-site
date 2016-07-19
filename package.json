@@ -1,23 +1,13 @@
 {
-  "name": "react-redux-bootstrap4",
+  "name": "lizalex-site",
   "version": "1.0.0",
-  "description": "boilerplate",
-  "homepage": "https://niqdev.github.io/react-redux-bootstrap4",
+  "description": "lizalex-site",
+  "homepage": "https://niqdev.github.io/lizalex-site",
   "license": "CC-BY-SA-4.0",
   "author": "niqdev (https://github.com/niqdev)",
-  "keywords": [
-    "webpack",
-    "react",
-    "redux",
-    "redux-devtools",
-    "react-hot-loader",
-    "react-router",
-    "react-intl",
-    "bootstrap 4"
-  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/niqdev/react-redux-bootstrap4.git"
+    "url": "git+https://github.com/niqdev/lizalex-site.git"
   },
   "engines": {
     "node": "6.2.x",

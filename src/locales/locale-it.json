@@ -3,9 +3,6 @@
   "label": "Italiano",
   "messages": {
     "navbar.home": "Home",
-    "navbar.counter": "Esempio Redux",
-    "home.source": "Sorgenti su GitHub",
-    "counter.even": "Pari",
-    "counter.odd": "Dispari"
+    "home": "lizalex"
   }
 }

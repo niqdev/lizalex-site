@@ -30,7 +30,7 @@ const config = {
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
     new HtmlWebpackPlugin({
-      title: 'react-redux-bootstrap4',
+      title: 'lizalex',
       filename: 'index.html',
       template: 'index.template.html',
       favicon: path.join(__dirname, 'public/favicon.ico')
