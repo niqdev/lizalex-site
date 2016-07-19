@@ -1,0 +1,11 @@
+{
+  "language": "en",
+  "label": "English",
+  "messages": {
+    "navbar.home": "Home",
+    "navbar.counter": "Redux example",
+    "home.source": "Source on GitHub",
+    "counter.even": "Even",
+    "counter.odd": "Odd"
+  }
+}
