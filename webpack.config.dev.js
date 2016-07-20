@@ -67,9 +67,10 @@ const config = {
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
     alias: {
-      'bootstrap-css': path.join(__dirname, 'node_modules/bootstrap/dist/css/bootstrap.css')
+      'bootstrap-css': path.join(__dirname, 'node_modules/bootstrap/dist/css/bootstrap.css'),
+      'slick-css': path.join(__dirname, 'node_modules/slick-carousel/slick/slick.css'),
+      'slick-theme-css': path.join(__dirname, 'node_modules/slick-carousel/slick/slick-theme.css')
     }
   }
 }

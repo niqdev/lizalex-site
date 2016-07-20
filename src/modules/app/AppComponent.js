@@ -6,9 +6,7 @@ export default function App({ children }) {
   return (
     <div>
       <Navbar />
-      <div className="container">
-        {children}
-      </div>
+      {children}
     </div>
   )
 }

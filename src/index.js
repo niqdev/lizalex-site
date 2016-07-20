@@ -10,6 +10,8 @@ import { getDefault as getDefaultLocale } from './locales'
 
 /*eslint-disable */
 import 'bootstrap-css'
+import 'slick-css'
+import 'slick-theme-css'
 /*eslint-enable */
 
 addLocaleData(en)

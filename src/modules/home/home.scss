@@ -1,0 +1,19 @@
+@import "../variables";
+
+@include media-breakpoint-up(md) {
+  .container-home {
+    top: -54px;
+    position: relative;
+  }
+}
+
+.container-home {
+  .slick-slider {
+    //text-align: center;
+    .img-carousel {
+      width: 100%;
+      //display: block;
+      //margin: 0 auto;
+    }
+  }
+}

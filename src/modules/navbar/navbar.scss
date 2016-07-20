@@ -1,0 +1,12 @@
+@import "../variables";
+
+@include media-breakpoint-up(md) {
+  .navbar {
+    opacity: 0.6;
+    z-index: 1;
+  }
+}
+
+.navbar {
+  border-radius: 0rem !important;
+}
