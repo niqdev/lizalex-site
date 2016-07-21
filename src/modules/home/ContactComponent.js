@@ -6,26 +6,6 @@ import imgPlace from './img/place.png'
 const API_KEY = 'AIzaSyCJbcOMVfXDmi3H5cl6_Du3x6Tt0h3GylE'
 const Coordinates = { lat: 45.486038, lng: 9.204336 }
 
-const Place = () => (
-  <div className="place">
-    <img src={imgPlace} alt="place" />
-  </div>
-)
-
-export default function ContactComponent() {
-  return (
-    <section className="contact">
-      <GoogleMap
-        apiKey={API_KEY}
-        center={[Coordinates.lat, Coordinates.lng]}
-        zoom={14}
-        options={mapOptions}>
-        <Place lat={Coordinates.lat} lng={Coordinates.lng} />
-      </GoogleMap>
-    </section>
-  )
-}
-
 // https://snazzymaps.com/style/122/flat-map-with-labels
 const mapOptions = {
   scrollwheel: false,
@@ -90,4 +70,24 @@ const mapOptions = {
       { hue: '#d7e4e4' }, { saturation: -60 }, { lightness: 23 }, { visibility: 'on' }
     ]
   }]
+}
+
+const Place = () => (
+  <div className="place">
+    <img src={imgPlace} alt="place" />
+  </div>
+)
+
+export default function ContactComponent() {
+  return (
+    <section className="contact">
+      <GoogleMap
+        apiKey={API_KEY}
+        center={[Coordinates.lat, Coordinates.lng]}
+        zoom={14}
+        options={mapOptions}>
+        <Place lat={Coordinates.lat} lng={Coordinates.lng} />
+      </GoogleMap>
+    </section>
+  )
 }

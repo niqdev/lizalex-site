@@ -5,13 +5,17 @@ import imgInstagram from './img/instagram.png'
 export default function FooterComponent() {
   return (
     <footer>
-      <div class="container">
+      <div className="container">
         <div className="row">
           <div className="col-xs-12">
-            <a href="#"><img src={imgGithub} alt="github"/></a>
-            <a href="#"><img src={imgInstagram} alt="instagram"/></a>
-            </div>
+            <a href="https://github.com/niqdev/lizalex-site" target="_blank">
+              <img src={imgGithub} alt="github" />
+            </a>
+            <a href="#">
+              <img src={imgInstagram} alt="instagram" />
+            </a>
           </div>
+        </div>
       </div>
     </footer>
   )
