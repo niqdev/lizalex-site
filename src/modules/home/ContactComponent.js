@@ -1,6 +1,6 @@
 import React from 'react'
 import GoogleMap from 'google-map-react'
-import './home.scss'
+import { FormattedMessage } from 'react-intl'
 import imgPlace from './img/place.png'
 
 const API_KEY = 'AIzaSyCJbcOMVfXDmi3H5cl6_Du3x6Tt0h3GylE'
@@ -81,6 +81,19 @@ const Place = () => (
 export default function ContactComponent() {
   return (
     <section className="contact">
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-12">
+            <FormattedMessage id="contact.address" />
+          </div>
+          <div className="col-xs-12">
+            <FormattedMessage id="contact.phone" />
+          </div>
+          <div className="col-xs-12">
+            <FormattedMessage id="contact.email" />
+          </div>
+        </div>
+      </div>
       <GoogleMap
         apiKey={API_KEY}
         center={[Coordinates.lat, Coordinates.lng]}
