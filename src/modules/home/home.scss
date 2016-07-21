@@ -2,32 +2,49 @@
 
 @include media-breakpoint-up(md) {
   .container-home {
-    top: -54px;
-    position: relative;
+    section.header {
+      top: -54px;
+      position: relative;
+    }
   }
 }
 
 .container-home {
-  .slick-slider {
-    .img-carousel {
-      width: 100%;
-    }
-    .slick-dots {
-      bottom: 10px;
+
+  section.header {
+    .slick-slider {
+      .img-carousel {
+        width: 100%;
+      }
+      .slick-dots {
+        bottom: 10px;
+      }
     }
   }
 
-  .row.gallery {
+  section.gallery {
     text-align: center;
     .card-img-top {
       width: 100%;
     }
   }
 
-  .google-map > div:first-child {
-    height: 450px !important;
-    .place > img {
-      width: 2em;
+  section.contact {
+    > div:first-child {
+      height: 450px !important;
+      .place > img {
+        width: 2em;
+      }
     }
   }
+
+  footer {
+    margin: 0.5em 0;
+    text-align: center;
+    img {
+      width: 2em;
+      opacity: 0.6;
+    }
+  }
+
 }

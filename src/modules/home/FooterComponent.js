@@ -1,0 +1,18 @@
+import React from 'react'
+import imgGithub from './img/github-circle.png'
+import imgInstagram from './img/instagram.png'
+
+export default function FooterComponent() {
+  return (
+    <footer>
+      <div class="container">
+        <div className="row">
+          <div className="col-xs-12">
+            <a href="#"><img src={imgGithub} alt="github"/></a>
+            <a href="#"><img src={imgInstagram} alt="instagram"/></a>
+            </div>
+          </div>
+      </div>
+    </footer>
+  )
+}
