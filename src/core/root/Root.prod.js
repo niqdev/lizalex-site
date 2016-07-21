@@ -2,10 +2,10 @@ import React, { PropTypes } from 'react'
 import { Provider } from 'react-redux'
 import { IntlProvider } from 'react-intl-redux'
 import { Router, useRouterHistory } from 'react-router'
-import { createHashHistory } from 'history'
+import { createMemoryHistory } from 'history'
 import routes from '../routes'
 
-const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })
+const appHistory = useRouterHistory(createMemoryHistory)()
 
 export default function Root({ store }) {
   return (
