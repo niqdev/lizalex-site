@@ -3,6 +3,10 @@
   "label": "Italiano",
   "messages": {
     "navbar.home": "Home",
-    "home": "lizalex"
+    "home.title": "lizalex",
+    "home.description": "descrizione lunga descrizione lunga descrizione lunga descrizione lunga descrizione lunga",
+    "gallery.info1": "info1",
+    "gallery.info2": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+    "gallery.info3": "info3"
   }
 }

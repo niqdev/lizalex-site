@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from 'react-slick'
+import placehold from './placehold_1900x700.png'
 
 export default function HomeComponent() {
   const settings = {
@@ -16,9 +17,9 @@ export default function HomeComponent() {
   }
   return (
     <Slider {...settings}>
-      <div><img src="http://placehold.it/1900x700" alt="carousel-1" className="img-carousel" /></div>
-      <div><img src="http://placehold.it/1900x700" alt="carousel-2" className="img-carousel" /></div>
-      <div><img src="http://placehold.it/1900x700" alt="carousel-3" className="img-carousel" /></div>
+      <div><img src={placehold} alt="carousel-1" className="img-carousel" /></div>
+      <div><img src={placehold} alt="carousel-2" className="img-carousel" /></div>
+      <div><img src={placehold} alt="carousel-3" className="img-carousel" /></div>
     </Slider>
   )
 }

@@ -9,11 +9,18 @@
 
 .container-home {
   .slick-slider {
-    //text-align: center;
     .img-carousel {
       width: 100%;
-      //display: block;
-      //margin: 0 auto;
+    }
+    .slick-dots {
+      bottom: 10px;
+    }
+  }
+
+  .section-gallery {
+    text-align: center;
+    .card-img-top {
+      width: 100%;
     }
   }
 }
