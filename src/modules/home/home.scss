@@ -17,10 +17,17 @@
     }
   }
 
-  .section-gallery {
+  .row.gallery {
     text-align: center;
     .card-img-top {
       width: 100%;
+    }
+  }
+
+  .google-map > div:first-child {
+    height: 450px !important;
+    .place > img {
+      width: 2em;
     }
   }
 }

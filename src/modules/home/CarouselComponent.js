@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from 'react-slick'
-import placehold from './placehold_1900x700.png'
+import placehold from './img/placehold_1900x700.png'
 
 export default function HomeComponent() {
   const settings = {
