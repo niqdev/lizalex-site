@@ -81,7 +81,7 @@ const Place = () => (
 export default function ContactComponent() {
   return (
     <section className="contact">
-      <div className="container">
+      <div className="container m-b-2">
         <div className="row">
           <div className="col-xs-12">
             <FormattedMessage id="contact.address" />
@@ -95,7 +95,7 @@ export default function ContactComponent() {
         </div>
       </div>
       <GoogleMap
-        apiKey={API_KEY}
+        bootstrapURLKeys={{ key: API_KEY }}
         center={[Coordinates.lat, Coordinates.lng]}
         zoom={14}
         options={mapOptions}>
