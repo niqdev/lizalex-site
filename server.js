@@ -9,7 +9,9 @@ const server = new WebpackDevServer(webpack(config), {
   hot: true,
   historyApiFallback: true,
   stats: {
-    colors: true
+    colors: true,
+    reasons: true,
+    errorDetails: true
   }
 });
 
