@@ -11,7 +11,7 @@ export default function FooterComponent() {
             <a href="https://github.com/niqdev/lizalex-site" target="_blank">
               <img src={imgGithub} alt="github" />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/rivermanadventures" target="_blank">
               <img src={imgInstagram} alt="instagram" />
             </a>
           </div>
