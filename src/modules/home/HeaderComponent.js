@@ -26,7 +26,7 @@ export default function HeaderComponent() {
   ]
 
   const images = imageSrc.map((img, index) => {
-    return <div><img src={img} alt={`carousel-${index}`} className="img-carousel" /></div>
+    return <div key={index}><img src={img} alt={`carousel-${index}`} className="img-carousel" /></div>
   });
   return (
     <section className="header">
@@ -34,7 +34,7 @@ export default function HeaderComponent() {
       <div className="container">
         <div className="text-xs-center m-t-2">
           <h1><FormattedMessage id="home.title" /></h1>
-          <p><FormattedMessage id="home.description" /></p>
+          <h4><FormattedMessage id="home.description" /></h4>
         </div>
       </div>
       <hr className="m-y-3" />
