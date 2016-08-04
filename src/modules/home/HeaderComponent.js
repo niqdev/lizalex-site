@@ -25,9 +25,9 @@ export default function HeaderComponent() {
     'https://res.cloudinary.com/niqdev/image/upload/v1470068484/demo2/DSC_0329_HDR_3.jpg'
   ]
 
-  const images = imageSrc.map((img, index) => {
-    return <div key={index}><img src={img} alt={`carousel-${index}`} className="img-carousel" /></div>
-  });
+  const images = imageSrc.map((img, index) =>
+    <div key={index}><img src={img} alt={`carousel-${index}`} className="img-carousel" /></div>)
+
   return (
     <section className="header">
       <Slider {...settings}>{images}</Slider>
