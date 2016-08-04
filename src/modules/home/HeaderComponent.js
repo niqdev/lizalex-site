@@ -14,17 +14,23 @@ export default function HeaderComponent() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    touchMove: true
+    touchMove: true,
+    lazyLoad: true
   }
-  // TODO iterate array
+
+  const imageSrc = [
+    'https://res.cloudinary.com/niqdev/image/upload/v1470068480/demo2/DSC_0138_HDR.jpg',
+    'https://res.cloudinary.com/niqdev/image/upload/v1470068486/demo2/DSC_0172-Modifica-3-Modifica.jpg',
+    'https://res.cloudinary.com/niqdev/image/upload/v1470068487/demo2/DSC_0312.jpg',
+    'https://res.cloudinary.com/niqdev/image/upload/v1470068484/demo2/DSC_0329_HDR_3.jpg'
+  ]
+
+  const images = imageSrc.map((img, index) => {
+    return <div><img src={img} alt={`carousel-${index}`} className="img-carousel" /></div>
+  });
   return (
     <section className="header">
-      <Slider {...settings}>
-        <div><img src="http://res.cloudinary.com/niqdev/image/upload/v1470068480/demo2/DSC_0138_HDR.jpg" alt="carousel-1" className="img-carousel" /></div>
-        <div><img src="http://res.cloudinary.com/niqdev/image/upload/v1470068486/demo2/DSC_0172-Modifica-3-Modifica.jpg" alt="carousel-2" className="img-carousel" /></div>
-        <div><img src="http://res.cloudinary.com/niqdev/image/upload/v1470068487/demo2/DSC_0312.jpg" alt="carousel-3" className="img-carousel" /></div>
-        <div><img src="http://res.cloudinary.com/niqdev/image/upload/v1470068484/demo2/DSC_0329_HDR_3.jpg" alt="carousel-4" className="img-carousel" /></div>
-      </Slider>
+      <Slider {...settings}>{images}</Slider>
       <div className="container">
         <div className="text-xs-center m-t-2">
           <h1><FormattedMessage id="home.title" /></h1>

@@ -2,15 +2,25 @@
   "language": "en",
   "label": "English",
   "messages": {
-    "navbar.home": "Home",
-    "home.title": "lizalex",
-    "home.description": "long description long description long description long description long description",
-    "gallery.info1": "info1",
-    "gallery.info2": "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    "gallery.info3": "info3",
-    "contact.address": "Address",
+    "navbar.brand": "B&B",
+    "home.title": "Bed & Breakfast Lizalex",
+    "home.description": "A secluded house with comfortable rooms, view, peace and facilities",
+    "gallery.info1": "The house",
+    "gallery.info2": "The view",
+    "gallery.info3": "A room",
+    "gallery.info4": "A bath",
+    "gallery.info5": "The kitchen",
+    "gallery.info6": "Badminton",
+    "gallery.description1": "The house is situated at 1.7 km from the center of Pralungo village and 6 km from the centre of Biella, which means that in 12 minutes you can reach any central place in Biella including the railway station.",
+    "gallery.description2": "The private road that leads to the ends in front of the house itself offering absolute peacefulness and privacy.",
+    "gallery.description3": "Each room has its private bath and the largest can host even a family of four.",
+    "gallery.description4": "Different sorts of facilities are available: table tennis (cornilleau 510) football table, good bicycles, badminton, barbeque.",
+    "gallery.description5": "Shuttle available to and from the railway station. English, Italian and French spoken.",
+    "gallery.description6": "Rooms from 50 to 60 euro included breakfast for two.",
+    "contact.description": "Feel free to ask any question, we will be delighted to answer them.",
     "contact.phone": "Phone",
     "contact.email": "Email",
-    "cookie": "TODO cookie"
+    "contact.address": "Address",
+    "cookie": "This website uses cookies to improve user experience. Browsing this website you consent to all cookies in accordance with our Cookie Policy."
   }
 }
